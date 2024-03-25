@@ -5,10 +5,10 @@ import Routing from './utlis/Routing';
 
 const App = () => {
   return (
-    <>
+    <div className=''>
       <Nav/>
       <Routing/>
-    </>
+    </div>
   );
 };
 

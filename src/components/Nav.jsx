@@ -1,17 +1,46 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
-    return (
-      <>
-        <nav>
-        <Link to='/' >Home</Link>
-        <Link to='/About' >About</Link>
-        <Link to='/User' >User</Link>
+  return (
+    <>
+      <div className=' flex justify-center  items-center h-24 gap-10 text-2xl'>
+        <nav >
+          <NavLink
+            style={(e) => {
+              return {
+                color: e.isActive ? "tomato" : "",
+                fontWeight: e.isActive ? "bold" : ""
+              }
+            }}
+            to='/' >
+            Home</NavLink>
+          <NavLink 
+          style={(e) => {
+            return {
+              color: e.isActive ? "tomato" : "",
+              fontWeight: e.isActive ? "bold" : ""
+            }
+          }}
+         className='ml-10 mr-10' to='/About'>
+            
+            About
+          </NavLink>
+
+
+          <NavLink
+           style={(e) => {
+            return {
+              color: e.isActive ? "tomato" : "",
+              fontWeight: e.isActive ? "bold" : ""
+            }
+          }}
+          to='/User' >User</NavLink>
         </nav>
-      </>
-    );
-  };
-  
-  export default Nav;
-   
+      </div>
+    </>
+  );
+};
+
+export default Nav;
+
