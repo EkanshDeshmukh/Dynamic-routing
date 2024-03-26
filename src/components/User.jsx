@@ -8,7 +8,7 @@ function User() {
         <h1 className='text-red-200 text-5xl mb-2'>User</h1>
         <div className='flex  w-64 flex-col mt-5'>
           <Link
-            className='p-2 bg-red-400 text-white mb-5 text-2xl hover:bg-red-500'
+            className='p-2 bg-red-200 text-white mb-5 text-2xl hover:bg-red-500'
             to='/user/John'
           >John</Link>
           <Link
