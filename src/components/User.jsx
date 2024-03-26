@@ -12,7 +12,7 @@ function User() {
             to='/user/John'
           >John</Link>
           <Link
-            className='p-2 bg-red-400 text-white mb-5 text-2xl hover:bg-red-500'
+            className='p-2 bg-red-200 text-white mb-5 text-2xl hover:bg-red-500'
             to='/user/Don '
           >Don</Link> <Link
             className='p-2 bg-red-400 text-white mb-5 text-2xl hover:bg-red-500'
