@@ -15,27 +15,27 @@ const Nav = () => {
             }}
             to='/' >
             Home</NavLink>
-          <NavLink 
-          style={(e) => {
-            return {
-              color: e.isActive ? "tomato" : "",
-              fontWeight: e.isActive ? "bold" : ""
-            }
-          }}
-         className='ml-10 mr-10' to='/About'>
-            
+          <NavLink
+            style={(e) => {
+              return {
+                color: e.isActive ? "tomato" : "",
+                fontWeight: e.isActive ? "bold" : ""
+              }
+            }}
+            className='ml-10 mr-10' to='/about'>
+
             About
           </NavLink>
 
 
           <NavLink
-           style={(e) => {
-            return {
-              color: e.isActive ? "tomato" : "",
-              fontWeight: e.isActive ? "bold" : ""
-            }
-          }}
-          to='/User' >User</NavLink>
+            style={(e) => {
+              return {
+                color: e.isActive ? "tomato" : "",
+                fontWeight: e.isActive ? "bold" : ""
+              }
+            }}
+            to='/user' >User</NavLink>
         </nav>
       </div>
     </>

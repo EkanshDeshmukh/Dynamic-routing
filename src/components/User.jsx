@@ -1,14 +1,32 @@
-import React from 'react';
-const User = () => {
+import React from 'react'
+import {Link,Outlet} from 'react-router-dom'
+
+function User() {
   return (
     <>
-       <div className='h-screen w-full flex items-center flex-col justify-center   text-center' >
-        <h1 className='text-3xl'>This is  User page</h1>
-        <p className='text-center w-[60%] m-5 opacity-50 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias veniam eius quaerat aliquam cupiditate fugit voluptatum qui non voluptas incidunt neque dolores ut, repellendus, quos asperiores nostrum dolor maiores obcaecati!</p>
-        <button className='px-3 py-2 rounded-md bg-blue-500 text-white'>Explore More</button>
+      <div className='w-1/2 mx-auto mt-10'>
+        <h1 className='text-red-200 text-5xl mb-2'>User</h1>
+        <div className='flex  w-64 flex-col mt-5'>
+          <Link
+            className='p-2 bg-red-400 text-white mb-5 text-2xl hover:bg-red-500'
+            to='/user/John'
+          >John</Link>
+          <Link
+            className='p-2 bg-red-400 text-white mb-5 text-2xl hover:bg-red-500'
+            to='/user/Don '
+          >Don</Link> <Link
+            className='p-2 bg-red-400 text-white mb-5 text-2xl hover:bg-red-500'
+            to='/user/Vonn'
+          >Vonn</Link>
+        </div>
+        <hr /> 
+        <hr /> 
+        <hr />
+        <Outlet/>
+
       </div>
     </>
-  );
-};
+  )
+}
 
-export default User;
+export default User
